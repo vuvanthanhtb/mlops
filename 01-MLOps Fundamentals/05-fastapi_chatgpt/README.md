@@ -30,5 +30,5 @@ There are two routes in the Swagger UI:
 - `/chat`: Press `Try it out`, then enter `Show me the image url of Saint Laurent YSL Men's Black/Brown Leather Zip Around Wallet` in the `text` and press `Execute`
 ![API key](./imgs/chat.png)
 
-- `/chat-auth`: Press `Try it out`, then enter `username`: `quandv` and `password`: `bQeUYlfCyITO` to authenticate.
+- `/chat-auth`: Press `Try it out`, then enter `username`: `???` and `password`: `???` to authenticate.
 After that, enter the text as the `/chat` route.
