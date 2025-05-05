@@ -20,6 +20,7 @@ CMD mlflow server \
     --host 0.0.0.0 \
     --port 5000
 
-#docker build -t before_msb -f mlflow/Dockerfile --build-arg MLFLOW_VERSION=2.3.2 mlfow
-#docker run before_msb
-#docker exec -ti before_msb bash
+# docker build -t before_msb -f mlflow/Dockerfile --build-arg MLFLOW_VERSION=2.3.2 mlflow
+# docker run before_msb
+# docker exec -ti before_msb bash
+# docker run -d --name mlflow -p 5000:5000 before_msb
