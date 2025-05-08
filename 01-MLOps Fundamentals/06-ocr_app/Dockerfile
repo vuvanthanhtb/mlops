@@ -20,5 +20,5 @@ RUN pip install -r requirements.txt --no-cache-dir
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "30000"]
 
 
-#sudo docker build -t vuvanthanhtb/ocr:0.01 -f Dockerfile .
-#sudo docker run -p 30000:30000 -d vuvanthanhtb/ocr:0.01
+# docker build -t vuvanthanhtb/ocr:0.0.1 -f Dockerfile .
+# docker run -p 30000:30000 -d vuvanthanhtb/ocr:0.0.1

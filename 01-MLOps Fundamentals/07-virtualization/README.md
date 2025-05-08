@@ -22,3 +22,15 @@ docker build -t after_msb -f mlflow/Dockerfile-multistage-build --build-arg MLFL
   ```shell
   docker compose -f trino-docker-compose.yaml up -d
   ```
+
+## .env
+```
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=mlflowdb
+POSTGRES_USER=mlopsvn
+POSTGRES_PASSWORD=mlopsvn
+
+BACKEND_STORE_URI=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${postgresql}:${POSTGRES_PORT}/${POSTGRES_DB}
+MLFLOW_VERSION=2.3.2
+```
