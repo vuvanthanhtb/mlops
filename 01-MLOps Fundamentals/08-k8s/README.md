@@ -12,7 +12,7 @@ minikube start
 
 If you want Minikube to use all of your computer resources, use the following command:
 ```shell
-minikube start --cpu=max --memory=max
+minikube start --cpus=max --memory=max
 ```
 
 ## Try basic k8s operations
