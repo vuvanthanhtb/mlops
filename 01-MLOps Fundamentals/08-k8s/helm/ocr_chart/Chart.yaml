@@ -14,5 +14,5 @@ version: 0.1.0
 appVersion: "1.0.0"
 
 maintainers:
-- email: fullstackdatascience.com
-  name: fullstackdatascience
+- email: mlops.com
+  name: mlops
