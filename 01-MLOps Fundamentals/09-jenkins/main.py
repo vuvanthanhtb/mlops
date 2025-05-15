@@ -42,10 +42,10 @@ def predict(data: HouseInfo):
   logger.info("Make predictions...")
   # Convert data to pandas DataFrame and make predictions
   price = clf.predict(
-    pd.DataFrame(
-      jsonable_encoder(data),
-      index=[0]
-    )
+      pd.DataFrame(
+          jsonable_encoder(data),
+          index=[0]
+      )
   )[0]
 
   # Return the result
