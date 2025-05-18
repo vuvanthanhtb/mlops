@@ -29,7 +29,7 @@ class HouseInfo(BaseModel):
 
 # Loading model with default path models/model.pkl
 clf = joblib.load(
-    os.environ.get('MODEL_PATH', "models/model.pkl")
+  os.environ.get('MODEL_PATH', "models/model.pkl")
 )
 
 # Creating an endpoint to receive the data
@@ -42,10 +42,10 @@ def predict(data: HouseInfo):
   logger.info("Make predictions...")
   # Convert data to pandas DataFrame and make predictions
   price = clf.predict(
-      pd.DataFrame(
-          jsonable_encoder(data),
-          index=[0]
-      )
+    pd.DataFrame(
+      jsonable_encoder(data),
+      index=[0]
+    )
   )[0]
 
   # Return the result
